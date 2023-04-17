@@ -64,7 +64,7 @@ prediction = model.predict(img_norm.reshape(1, 32, 32, 1))
 # Get the predicted class
 predicted_class = class_dict[np.argmax(prediction)]
 #Use ChatGPT to generate a response about the sign
-openai.api_key = 'bro thinks ill give him my api key' 
+openai.api_key = 'YOUR_API_KEY' 
 #Message generation using ChatCompletion
 message = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
